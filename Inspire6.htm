@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRMS UPI Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .payment-container {
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .payment-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .payment-header img {
+            width: 100px;
+        }
+        .payment-header h1 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .payment-details p {
+            font-size: 16px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .qr-code {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ddd;
+        }
+        .upi-id {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .upi-id p {
+            font-size: 18px;
+            color: #333;
+        }
+        .amount {
+            text-align: center;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons a {
+            text-decoration: none;
+            background-color: #ff6600;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+            margin: 0 5px;
+            display: inline-block;
+        }
+        .buttons a:hover {
+            background-color: #e65a00;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-header">
+            <img src="Logo.png" alt="SRMS Logo">
+            <h1>SRMS UPI Payment</h1>
+        </div>
+        <div class="payment-details">
+            <p><strong>Amount:</strong> ₹2140.35</p>
+            <p><strong>UPI ID:</strong> 9793029018@fam</p>
+        </div>
+        <div class="qr-code">
+            <img src="UPI.jpg" alt="QR Code">
+        </div>
+        <div class="upi-id">
+            <p>Scan the QR code above or use the UPI ID to complete the payment.</p>
+        </div>
+        <div class="amount">
+            <p>Total Amount: ₹2140.35</p>
+        </div>
+        <div class="buttons">
+            <a href="Inspire5.htm">Cancel</a>
+            <a href="Inspire7.htm">View Your Tickets</a>
+        </div>
+    </div>
+</body>
+</html>

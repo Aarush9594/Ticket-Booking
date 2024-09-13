@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Tickets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .ticket-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .ticket {
+            background-color: #fff;
+            border: 2px solid #0056b3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .ticket h2 {
+            color: #0056b3;
+            margin-top: 0;
+        }
+        .ticket p {
+            margin: 8px 0;
+        }
+        .ticket .passenger-name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .ticket .train-details-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ticket .train-details {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: 70%;
+        }
+        .ticket .train-details p {
+            margin: 5px 0;
+        }
+        .ticket .qr-code {
+            width: 100px;
+            text-align: center;
+        }
+        .ticket .qr-code img {
+            width: 100px;
+            height: 100px;
+        }
+        .ticket .irctc-logo {
+            width: 100px;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .thank-you {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3.5em;
+            color: #0056b3;
+            font-weight: bold;
+        }
+	.download-button a {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+	    text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .back-button a:hover {
+            background-color: #ff9900;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="ticket-container">
+        <!-- Ticket 1 -->
+        <div class="ticket">
+            <img src="Logo.png" alt="IRCTC Logo" class="irctc-logo">
+            <h2>Train Ticket</h2>
+            <p class="passenger-name">Passenger: Swarnam</p>
+            <div class="train-details-container">
+                <div class="train-details">
+                    <p>Train No: X2Y3Z</p>
+                    <p>Train Name: Bande Bharat</p>
+                    <p>From: New Delhi (NDLS)</p>
+                    <p>To: Varanasi (BSB)</p>
+                    <p>Date of Journey: 9th September 2024</p>
+                    <p>Departure Time: 06:00 AM</p>
+                    <p>Class: AC Chair Car</p>
+                    <p>Seat No: 21</p>
+                </div>
+                <div class="qr-code">
+                    <img src="QR Code.png" alt="QR Code">
+                </div>
+            </div>
+            <p>PNR: 1234567890</p>
+        </div>
+
+        <!-- Ticket 2 -->
+        <div class="ticket">
+            <img src="Logo.png" alt="IRCTC Logo" class="irctc-logo">
+            <h2>Platform Ticket</h2>
+            <p class="passenger-name">Drop Offer: Aarush</p>
+            <div class="train-details-container">
+                <div class="train-details">
+                  <p>Dropping off: Swarnam</p>
+                  <p>Date of Dropping: 9th September 2024</p>
+
+                </div>
+                <div class="qr-code">
+                    <img src="QR Code.png" alt="QR Code">
+                </div>
+            </div>
+            <p>DNR: 0987654321</p>
+        </div>
+    </div>
+	<div class="download-button">
+	<a href>Download</a>
+	</div>
+
+    <!-- Thank You Message -->
+    <div class="thank-you">
+        Thank You for Choosing SRMS !
+    </div>
+
+</body>
+</html>

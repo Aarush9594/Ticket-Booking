@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #003366;
+            padding: 20px;
+            color: white;
+            text-align: left;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .ticket-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .ticket-info h2 {
+            margin: 0;
+        }
+        .details, .fare-summary {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .fare-summary {
+            width: 300px;
+        }
+        .details p, .fare-summary p {
+            margin: 10px 0;
+        }
+        .fare-summary .total {
+            font-weight: bold;
+            color: #003366;
+        }
+        .passenger-details {
+            margin-top: 20px;
+        }
+        .passenger-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .passenger-details table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #002244;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>BANDE BHARAT EX (X2Y3Z)</h1>
+</div>
+
+<div class="container">
+    <div class="ticket-info">
+        <div class="details">
+            <h2>Ticket Details</h2>
+            <p><strong>From:</strong> New Delhi (06:00)</p>
+            <p><strong>To:</strong> Varanasi JN (14:00)</p>
+            <p><strong>Travel Date:</strong> Mon, 09 Sep 2024</p>
+            <p><strong>Class:</strong> AC Chair Car (CC) | General</p>
+            <p><strong>Boarding at:</strong> New Delhi</p>
+        </div>
+        <div class="fare-summary">
+            <h3>Fare Summary</h3>
+            <p><strong>Ticket Fare:</strong> ₹ 1,805.00</p>
+	    <P><strong>Drop Offer Fare:</strong> ₹ 10
+            <p><strong>GST:</strong> ₹ 324.90</p>
+            <p><strong>Travel Insurance:</strong> ₹ 0.45</p>
+            <p class="total">Total Fare: ₹ 2,140.35</p>
+        </div>
+    </div>
+
+    <div class="passenger-details">
+        <h3>Passenger Details</h3>
+        <table>
+            <tr>
+                <th>Passenger Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>Nationality</th>
+            </tr>
+            <tr>
+                <td>Swarnam</td>
+                <td>14 yrs</td>
+                <td>Male</td>
+                <td>No Food</td>
+                <td>India</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Your ticket will be sent to sw******@gmail.com / 89******15</p>
+        <a href="#">View Cancellation Policy</a>
+    </div>
+	<div class="passenger-details">
+        <h3>Drop Offer(s) Details</h3>
+        <table>
+            <tr>
+                <th>Drop Offer's Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Nationality</th>
+            </tr>
+            <tr>
+                <td>Aarush</td>
+                <td>14 yrs</td>
+                <td>Male</td>
+                <td>India</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="buttons">
+        <a href="Inspire3.htm" class="button">Back</a>
+        <a href="Inspire5.htm#" class="button">Continue</a>
+    </div>
+</div>
+
+</body>
+</html>

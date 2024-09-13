@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Booking</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: color=white;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            background: #f4f4f4; /* Add slight transparency */
+            backdrop-filter: blur(8px); /* Background blur effect for realistic depth */
+        }
+
+        .header h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for text depth */
+        }
+
+        .preferences, .insurance, .payment-mode {
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for realism */
+        }
+
+        .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-container label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .checkbox-container input {
+            margin-right: 5px;
+        }
+
+        .insurance-options, .payment-options {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow to lift elements */
+        }
+
+        .insurance-options label, .payment-options label {
+            font-size: 14px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .insurance-options input[type="radio"], 
+        .payment-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .terms a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a.back-btn, a.continue-btn {
+            padding: 12px 30px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+            text-decoration: none; /* Ensure the link doesn't have underline */
+        }
+
+        a.back-btn:hover, a.continue-btn:hover {
+            background-color: #ff4500;
+            box-shadow: 0 6px 16px rgba(255, 69, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .checkbox-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .checkbox-container label {
+                margin-bottom: 10px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            a.back-btn, a.continue-btn {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>SRMS Booking</h1>
+        </div>
+
+        <!-- Preferences Section -->
+        <div class="preferences">
+            <label for="reservation-choice">Reservation Choice</label>
+            <select id="reservation-choice" name="reservation-choice" aria-label="Select Reservation Choice">
+                <option>Select Reservation</option>
+                <option>Side Lower Berth</option>
+                <option>Side Upper Berth</option>
+                <option>Lower Berth</option>
+                <option>Middle Berth</option>
+                <option>Upper Berth</option>
+            </select>
+
+            <label for="coach">Preferred Coach No.</label>
+            <input type="text" id="coach" name="coach" placeholder="Enter Coach Number" aria-label="Preferred Coach Number">
+
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="auto-upgrade" aria-label="Consider Auto Upgradation"> Consider for Auto Upgradation</label>
+                <label><input type="checkbox" name="confirm-berth" aria-label="Confirm Berths Only"> Book only if confirm berths are allotted</label>
+            </div>
+        </div>
+
+        <!-- Travel Insurance Section -->
+        <div class="insurance">
+            <label>Travel Insurance (Incl. of GST)</label>
+            <div class="insurance-options">
+                <label><input type="radio" name="insurance" value="yes" checked aria-label="Yes to Travel Insurance"> Yes, and I accept the <a href="#">terms & conditions</a></label>
+                <label><input type="radio" name="insurance" value="no" aria-label="No to Travel Insurance"> No, I don't want travel insurance</label>
+            </div>
+        </div>
+
+        <!-- Payment Mode Section -->
+        <div class="payment-mode">
+            <label>Payment Mode</label>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="card" checked aria-label="Credit Debit Cards Payment"> Pay through Credit & Debit Cards / Net Banking / Wallets / Bharat QR / Pay on Delivery / Rewards (₹30/- + GST)</label>
+                <label><input type="radio" name="payment" value="upi" aria-label="BHIM UPI Payment"> Pay through BHIM/UPI (₹20/- + GST)</label>
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="button-container">
+            <a href="Inspire2.htm" class="back-btn" aria-label="Back">Back</a>
+            <a href="Inspire4.htm" class="continue-btn" aria-label="Continue">Continue</a>
+        </div>
+    </div>
+
+</body>
+</html>
