@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>SRMS Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <img src="Logo.png" alt="Indian Railways Logo" class="h-12" width="100" height="100">
+            <div class="flex space-x-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded">LOGIN</button>
+                <button class="text-blue-600 px-4 py-2">REGISTER</button>
+                <button class="text-blue-600 px-4 py-2">AGENT LOGIN</button>
+                <button class="text-blue-600 px-4 py-2">CONTACT US</button>
+                <button class="text-red-600 px-4 py-2">DAILY DEALS</button>
+            </div>
+        </div>
+        <div class="bg-gray-100 py-2">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex space-x-4">
+                    <button class="text-blue-600 px-4 py-2">SRMS EXCLUSIVE</button>
+                    <button class="text-orange-600 px-4 py-2">TRAINS</button>
+                    <button class="text-blue-600 px-4 py-2">LOYALTY</button>
+                    <button class="text-blue-600 px-4 py-2">IRCTC eWallet</button>
+                    <button class="text-blue-600 px-4 py-2">BUSES</button>
+                    <button class="text-blue-600 px-4 py-2">FLIGHTS</button>
+                    <button class="text-blue-600 px-4 py-2">HOTELS</button>
+                    <button class="text-blue-600 px-4 py-2">HOLIDAYS</button>
+                    <button class="text-blue-600 px-4 py-2">MEALS</button>
+                    <button class="text-blue-600 px-4 py-2">PROMOTIONS</button>
+                    <button class="text-blue-600 px-4 py-2">MORE</button>
+                </div>
+                <div class="text-gray-600">
+                    <span>04-Sep-2024 [15:35:11]</span>
+                    <span class="mx-2">A - A - A +</span>
+                    <span>हिंदी</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="py-8">
+        <div class="container mx-auto flex">
+            <div class="w-1/2 bg-white p-8 shadow-lg rounded-lg">
+                <div class="flex justify-between mb-4">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded">PNR STATUS</button>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded">CHARTS / VACANCY</button>
+                </div>
+                <h2 class="text-2xl font-bold text-blue-800 mb-4">BOOK TICKET</h2>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">From</label>
+                        <div class="relative">
+                            <select class="w-full border border-gray-300 p-2 rounded">
+				<option>---SELECT---</option>
+                                <option>NEW DELHI - NDLS (New Delhi Railway Station)</option>
+                                <option>BANARAS - BSBS (Varanasi Junction)</option>
+                                <option>MUMBAI - CSMT (Chattrapati Shivaji Maharaj Terminal)</option>
+                                <option>CHENNAI - MAS (Chennai Central)</option>
+                                <option>KOLKATA - HWH (Howrah Junction)</option>
+                                <option>BANGALORE - SBC (KSR Karnataka)</option>
+				<option>SRINAGAR - SINA (Srinagar Station)</option>
+                        	<option>JAIPUR - JP (Jaipur Raliway Station)</option>
+                                <option>PATNA - PNBE (Patna Junction)</option>
+                                <!-- Add other stations as needed -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">To</label>
+                        <div class="relative">
+                            <select class="w-full border border-gray-300 p-2 rounded">
+				<option>---SELECT---</option>
+                                <option>NEW DELHI - NDLS (New Delhi Railway Station)</option>
+                                <option>BANARAS - BSBS (Varanasi Junction)</option>
+                                <option>MUMBAI - CSMT (Chattrapati Shivaji Maharaj Terminal)</option>
+                                <option>CHENNAI - MAS (Chennai Central)</option>
+                                <option>KOLKATA - HWH (Howrah Junction)</option>
+                                <option>BANGALORE - SBC (KSR Karnataka)</option>
+				<option>SRINAGAR - SINA (Srinagar Station)</option>
+                        	<option>JAIPUR - JP (Jaipur Raliway Station)</option>
+                                <option>PATNA - PNBE (Patna Junction)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">DD/MM/YYYY </label>
+                        <div class="form-group">
+				<select class="w-full border border-gray-300 p-2 rounded">
+                <label for="date">Date of Journey:</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+ 
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Class</label>
+                        <div class="relative">
+                            <select class="w-full border border-gray-300 p-2 rounded">
+				<option>---SELECT---</option>
+                                <option>All Classes</option>
+                                <option>First AC</option>
+                                <option>Second AC</option>
+                                <option>Third AC</option>
+				<option>Third AC Economy</option>
+				<option>Sleeper </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Quota</label>
+                        <div class="relative">
+                            <select class="w-full border border-gray-300 p-2 rounded">
+				<option>---SELECT---</option>
+                                <option>GENERAL</option>
+                                <option>LADIES</option>
+                                <option>SENIOR CITIZEN</option>
+                                <option>TATKAL</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-4 flex space-x-4">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Person With Disability Concession
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Flexible With Date
+                        </label>
+                    </div>
+                    <div class="mb-4 flex space-x-4">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Train with Available Berth
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-2"> Railway Pass Concession
+                        </label>
+                    </div>	
+                    <div class="flex justify-between items-center">
+                        <a class="bg-orange-500 text-white px-4 py-2 rounded"href="Inspire1.htm">Search</a>
+                        <button class="bg-orange-500 text-white px-4 py-2 rounded">Easy Booking on AskDISHA</button>
+                    </div>
+                </form>
+            </div>
+            <div class="w-1/2 pl-8">
+                
+            </div>
+        </div>
+        <div class="container mx-auto mt-4 text-center">
+            <img src="Home.png"width= "40000" height="350000">
+        </div>
+    </main>
+</body>
+</html>
